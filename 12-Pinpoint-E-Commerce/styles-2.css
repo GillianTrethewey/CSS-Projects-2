@@ -4,7 +4,6 @@
   3. Structure Styles
   4. Module Styles
   5. Component Styles
-  6. Page Styles
 ======================================== */
 
 /* 1. Global Styles
@@ -151,6 +150,7 @@ strong {
 }
 
 small {
+  font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.25;
 }
@@ -168,6 +168,7 @@ small {
   border-bottom: 1px solid #F2F3F5;
   clear: both;
   width: 100%;
+  margin: 20px 0px;
 }
 
 @media(min-width: 720px) {
@@ -226,13 +227,25 @@ small {
 
 .site-nav-left li:not(:first-child),
 .site-nav-right li {
+  display: none;
   font-weight: 700;
-  display: inline-block;
   line-height: 0;
 }
 
 .site-nav-mobile li {
   display: inline-block;
+}
+
+@media(min-width: 768px) {
+  .site-nav-left li:not(:first-child),
+  .site-nav-right li {
+    display: inline-block;
+  }
+
+  .site-nav-mobile,
+  .site-nav-mobile li {
+    display: none;
+  }
 }
 
 .site-nav-left li:not(:last-child),
@@ -246,13 +259,13 @@ small {
 }
 
 .site-nav-link {
+  border-bottom: 2px solid transparent;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.site-nav-link-active {
-  color: #FF6600;
-  text-decoration: none;
+.site-nav-link.active {
+  color: #FFAA00;
 }
 
 /* Site Footer */
@@ -386,9 +399,9 @@ small {
 .chip-img-container {
   border-radius: 30em;
   float: left;
+  height: 60px;
   margin-right: 15px;
   overflow: hidden;
-  height: 60px;
   width: 60px;
 }
 
@@ -408,10 +421,10 @@ input,
 select,
 textarea {
   background-color: #FFFFFF;
-  border: 1px solid #F2F3F5;
   border-radius: 3px;
+  border: 1px solid #F2F3F5;
   box-shadow: inset 1px 1px 3px 0 rgba(189,191,192,0.10);
-  //height: 35px;
+  height: 35px;
   margin-bottom: 15px;
   padding: 10px;
   transition: border-color 0.5s ease;
@@ -440,8 +453,24 @@ textarea {
   border-color: #FC472E;
 }
 
+.radio-item {
+  margin-bottom: 15px;
+}
+
+.radio-item input {
+   box-shadow: none;
+   display: inline-block;
+   margin-bottom: 0px;
+}
+
 /* 6. Page Styles
 ======================================== */
+
+.col-left {
+  border-right: 1px solid #F2F3F5;
+  padding-right: 20px;
+}
+
 .site-main {
   padding: 60px 15px;
   position: relative;
@@ -449,18 +478,19 @@ textarea {
 
 .site-main-background {
   background-color: #34474F;
-  height: 600px;
-  display: block;
-  position: absolute;
-  top: 0;
   bottom: 0;
+  display: block;
+  height: 600px;
   left: 0;
+  position: absolute;
   right: 0;
+  top: 0;
   z-index: -1;
 }
 
 .site-main-header {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .site-main-header h1,
@@ -474,7 +504,51 @@ textarea {
   margin-bottom: 15px;
 }
 
-.location-details li {
+.order-item {
   display: block;
-  margin-top: 15px;
+  margin: 50px 0px;
+}
+
+@media(min-width: 720px) {
+  .item-price {
+    text-align: right;
+  }
+}
+
+.order-charge {
+  padding: 20px 0px;
+}
+
+.order-charge li {
+  display: block;
+  clear: both;
+}
+
+.order-charge-item {
+  display: inline-block;
+}
+
+.order-charge-item:last-child {
+  float: right;
+}
+
+.total-price {
+  display: block;
+  padding: 20px 0px;
+}
+
+.help-box {
+  background-color: #FFAA00;
+  border-radius: 3px;
+  clear: both;
+  display: block;
+  margin-top: 50px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.help-box p,
+.help-box a {
+  color: #34474F;
+  margin-bottom: 5px;
 }
