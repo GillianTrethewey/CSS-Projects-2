@@ -25,7 +25,7 @@ body {
 
 .navbar h1 {
   grid-column: 3 / 4;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   color: #ffffff;
   margin: 0;
   align-self: center;
@@ -85,7 +85,7 @@ input {
 .card-column h2 {
   padding: 0;
   margin: 0 auto;
-  font-family: 'WorkSans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -132,7 +132,7 @@ input {
 .task-description {
   margin-left: 7px;
   margin-top: 0;
-  font-family: 'WorkSans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0.2px;
   text-align: left;
@@ -147,7 +147,7 @@ input {
 
 .task-date {
   display: inline-block;
-  font-family: 'WorkSans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 10px;
   letter-spacing: 0.1px;
   text-align: left;
