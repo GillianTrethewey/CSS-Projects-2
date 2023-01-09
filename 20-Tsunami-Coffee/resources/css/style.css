@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-  background-color: OrangeRed;
+  background-color: peru;
   color: White;
 }
 
@@ -59,7 +59,7 @@ li {
 }
 
 .rating {
-  background-color: OrangeRed;
+  background-color: peru;
   height: 20rem;
   padding: 0 1rem;
   color: white;
@@ -93,7 +93,7 @@ li {
 }
 
 footer {
-  background-color: OrangeRed;
+  background-color: peru;
   padding: 0 1rem;
 }
 
