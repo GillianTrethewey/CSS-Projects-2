@@ -27,8 +27,8 @@
   --custom-drop: #67929e;
 
   /* Custom Functions go below */
-  --main-bird: url("images/hummingbird.jpg");
-  --night-bird: url("images/owl.jpg");
+  --main-bird: url("../images/hummingbird.jpg");
+  --night-bird: url("../images/owl.jpg");
   --path-value-1: 20%;
   --path-value-2: 80%;
   --path-value-3: 100%;
@@ -225,7 +225,7 @@ img {
 }
 
 .header {
-  background-image: url("images/bird1.webp");
+  background-image: url("../images/bird1.webp");
 }
 
 .subhead-1 {
@@ -238,11 +238,11 @@ img {
   cursor: pointer;
 }
 .subhead-2 {
-  background-image: url("images/bird3.webp");
+  background-image: url("../images/bird3.webp");
 }
 
 .block-1 {
-  background-image: url("images/bird4.webp");
+  background-image: url("../images/bird4.webp");
 }
 
 .block-1:hover {
@@ -251,27 +251,27 @@ img {
   cursor: pointer;
 }
 .block-2 {
-  background-image: url("images/bird5.webp");
+  background-image: url("../images/bird5.webp");
 }
 
 .block-3 {
-  background-image: url("images/bird6.webp");
+  background-image: url("../images/bird6.webp");
 }
 
 .block-4 {
-  background-image: url("images/bird7.webp");
+  background-image: url("../images/bird7.webp");
 }
 
 .block-5 {
-  background-image: url("images/bird8.webp");
+  background-image: url("../images/bird8.webp");
 }
 
 .block-6 {
-  background-image: url("images/bird9.webp");
+  background-image: url("../images/bird9.webp");
 }
 
 .block-7 {
-  background-image: url("images/bird10.webp");
+  background-image: url("../images/bird10.webp");
 }
 
 @supports (display: grid) {
